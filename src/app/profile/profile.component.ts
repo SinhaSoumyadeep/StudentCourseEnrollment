@@ -23,7 +23,8 @@ export class ProfileComponent implements OnInit {
   update(user: User) {
     console.log(user);
     this.service
-      .updateUser(user).then((response) => { console.log(response)})
+      .updateUser(user).then((response) => { console.log(response);
+      window.location.reload()})
 
 
   }

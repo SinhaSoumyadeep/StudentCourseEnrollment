@@ -136,7 +136,7 @@ export class UserServiceClient {
       headers: {
         'content-type': 'application/json'
       }
-    }).then(response => response.json());
+    }).then((response) => {response.json()});
   }
 
   updateSection(section){
